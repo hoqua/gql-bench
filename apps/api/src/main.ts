@@ -26,7 +26,7 @@ async function bootstrap() {
     adapter
   );
   const globalPrefix = 'graphql';
-  const port = process.env.PORT || 4000;
+  const port = process.env.PORT || 80;
 
   await app.listen(port);
   Logger.log(
