@@ -1,0 +1,19 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Message {
+  text: String
+}
+
+type Query {
+  readMessage(id: String!): Message
+}
+
+type Mutation {
+  addMessage(id: String!): Boolean!
+}
+
+type Subscription {
+  commentAdded(id: Int!): Message!
+}

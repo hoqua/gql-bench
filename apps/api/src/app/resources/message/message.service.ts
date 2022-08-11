@@ -13,7 +13,7 @@ async function readMessages(topic: string) {
   // a single element. See more: https://redis.io/commands/xread#return-value
   console.log('READ BLOCK', 0, 'STREAMS', topic, '$')
   const sub = new Redis(12000)
-  const results = await sub.xread('BLOCK', 500, 'STREAMS', topic, '$');
+  const results = await sub.xread('BLOCK', 0, 'STREAMS', topic, '$');
   console.log(results)
 
   const [key, messages] = results?.[0] || []; // `key` equals to "user-stream"
