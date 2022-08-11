@@ -1,0 +1,23 @@
+{
+  "name": "web",
+  "version": "0.0.1",
+  "dependencies": {
+    "graphql": "^16.5.0",
+    "graphql-ws": "^5.9.1",
+    "next": "12.2.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-is": "18.2.0",
+    "styled-components": "5.3.5",
+    "urql": "^2.2.3",
+    "@nrwl/workspace": "14.5.4",
+    "typescript": "~4.7.2"
+  },
+  "devDependencies": {
+    "@nrwl/next": "^14.5.4",
+    "@testing-library/react": "13.3.0"
+  },
+  "scripts": {
+    "start": "next start"
+  }
+}
