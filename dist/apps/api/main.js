@@ -384,7 +384,7 @@ function bootstrap() {
         const app = yield core_1.NestFactory.create(app_module_1.AppModule, adapter);
         const globalPrefix = 'graphql';
         const port = process.env.PORT || 80;
-        yield app.listen(port);
+        yield app.listen(port, '0.0.0.0');
         common_1.Logger.log(`🚀 Application is running on: http://localhost:${port}/${globalPrefix}`);
     });
 }
