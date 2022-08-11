@@ -2,7 +2,7 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./apps/api/src/app/app.module.ts":
+/***/ "../../../apps/api/src/app/app.module.ts":
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -11,7 +11,7 @@ exports.AppModule = void 0;
 const tslib_1 = __webpack_require__("tslib");
 const common_1 = __webpack_require__("@nestjs/common");
 const path = __webpack_require__("node:path");
-const message_module_1 = __webpack_require__("./apps/api/src/app/resources/message/message.module.ts");
+const message_module_1 = __webpack_require__("../../../apps/api/src/app/resources/message/message.module.ts");
 const graphql_1 = __webpack_require__("@nestjs/graphql");
 const mercurius_1 = __webpack_require__("@nestjs/mercurius");
 const EventEmitter = __webpack_require__("events");
@@ -106,7 +106,7 @@ exports.AppModule = AppModule;
 
 /***/ }),
 
-/***/ "./apps/api/src/app/resources/message/entities/message.entity.ts":
+/***/ "../../../apps/api/src/app/resources/message/entities/message.entity.ts":
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -128,7 +128,7 @@ exports.Message = Message;
 
 /***/ }),
 
-/***/ "./apps/api/src/app/resources/message/message.module.ts":
+/***/ "../../../apps/api/src/app/resources/message/message.module.ts":
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -136,8 +136,8 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.MessageModule = void 0;
 const tslib_1 = __webpack_require__("tslib");
 const common_1 = __webpack_require__("@nestjs/common");
-const message_service_1 = __webpack_require__("./apps/api/src/app/resources/message/message.service.ts");
-const message_resolver_1 = __webpack_require__("./apps/api/src/app/resources/message/message.resolver.ts");
+const message_service_1 = __webpack_require__("../../../apps/api/src/app/resources/message/message.service.ts");
+const message_resolver_1 = __webpack_require__("../../../apps/api/src/app/resources/message/message.resolver.ts");
 let MessageModule = class MessageModule {
 };
 MessageModule = tslib_1.__decorate([
@@ -150,7 +150,7 @@ exports.MessageModule = MessageModule;
 
 /***/ }),
 
-/***/ "./apps/api/src/app/resources/message/message.resolver.ts":
+/***/ "../../../apps/api/src/app/resources/message/message.resolver.ts":
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -159,8 +159,8 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.MessageResolver = void 0;
 const tslib_1 = __webpack_require__("tslib");
 const graphql_1 = __webpack_require__("@nestjs/graphql");
-const message_service_1 = __webpack_require__("./apps/api/src/app/resources/message/message.service.ts");
-const message_entity_1 = __webpack_require__("./apps/api/src/app/resources/message/entities/message.entity.ts");
+const message_service_1 = __webpack_require__("../../../apps/api/src/app/resources/message/message.service.ts");
+const message_entity_1 = __webpack_require__("../../../apps/api/src/app/resources/message/entities/message.entity.ts");
 const mercurius_1 = __webpack_require__("mercurius");
 let MessageResolver = class MessageResolver {
     constructor(messageService) {
@@ -213,7 +213,7 @@ exports.MessageResolver = MessageResolver;
 
 /***/ }),
 
-/***/ "./apps/api/src/app/resources/message/message.service.ts":
+/***/ "../../../apps/api/src/app/resources/message/message.service.ts":
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
@@ -372,7 +372,7 @@ const tslib_1 = __webpack_require__("tslib");
 const common_1 = __webpack_require__("@nestjs/common");
 const core_1 = __webpack_require__("@nestjs/core");
 const platform_fastify_1 = __webpack_require__("@nestjs/platform-fastify");
-const app_module_1 = __webpack_require__("./apps/api/src/app/app.module.ts");
+const app_module_1 = __webpack_require__("../../../apps/api/src/app/app.module.ts");
 function bootstrap() {
     return tslib_1.__awaiter(this, void 0, void 0, function* () {
         const adapter = new platform_fastify_1.FastifyAdapter({ logger: {
